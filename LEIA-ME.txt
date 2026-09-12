@@ -1,0 +1,33 @@
+MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.0
+
+CONTEÚDO
+- Página inicial institucional
+- Política de Privacidade
+- Termos de Uso
+- Página de Suporte
+- CNAME, robots.txt e sitemap.xml
+
+IMPORTANTE ANTES DA ABERTURA PÚBLICA
+1. Criar e inserir um endereço oficial de suporte nas páginas suporte.html, privacidade.html e termos.html.
+2. Solicitar revisão jurídica da Política de Privacidade e dos Termos de Uso.
+3. Confirmar que https://app.meudiariodeestudos.com.br está funcionando antes de divulgar o site.
+
+COMO PUBLICAR NO GITHUB PAGES
+1. Crie um repositório público separado, por exemplo: meu-diario-de-estudos-site.
+2. Envie TODO o conteúdo da pasta dist para a raiz do repositório (index.html, styles.css e os demais arquivos).
+3. No repositório, abra Settings > Pages.
+4. Em Build and deployment, selecione Deploy from a branch.
+5. Selecione main e / (root), depois Save.
+6. Em Custom domain, informe www.meudiariodeestudos.com.br e confirme.
+
+DNS NO CLOUDFLARE (somente após o domínio aparecer como Active)
+- Tipo: CNAME
+- Nome: www
+- Destino: leonardogda-gif.github.io
+- Proxy: DNS only (nuvem cinza) durante a configuração inicial do GitHub Pages.
+
+O domínio principal meudiariodeestudos.com.br pode ser redirecionado para
+https://www.meudiariodeestudos.com.br usando uma Redirect Rule do Cloudflare.
+
+Este site é estático. Ele não precisa do worker do aplicativo, D1, chave de IA,
+login Google, sw.js ou version.json.
