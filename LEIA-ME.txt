@@ -1,4 +1,8 @@
-MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.3
+MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.4
+
+NOVIDADE DA v1.4
+- O caderno com broto do card passa a ser o logo oficial no cabeçalho, rodapé e favicon.
+- A mesma identidade visual foi preparada para o aplicativo PWA.
 
 NOVIDADE DA v1.3
 - Card de compartilhamento otimizado em JPEG (1200 x 630, arquivo mais leve).
