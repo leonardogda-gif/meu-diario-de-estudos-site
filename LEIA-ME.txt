@@ -1,4 +1,9 @@
-MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.2
+MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.3
+
+NOVIDADE DA v1.3
+- Card de compartilhamento otimizado em JPEG (1200 x 630, arquivo mais leve).
+- Novo endereço da imagem para evitar o cache antigo do WhatsApp.
+- Metadados completos de imagem para WhatsApp, Facebook e X.
 
 CONTEÚDO
 - Página inicial institucional
