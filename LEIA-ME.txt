@@ -1,4 +1,4 @@
-MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.0
+MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.2
 
 CONTEÚDO
 - Página inicial institucional
@@ -6,11 +6,15 @@ CONTEÚDO
 - Termos de Uso
 - Página de Suporte
 - CNAME, robots.txt e sitemap.xml
+- Imagem e tags Open Graph para compartilhamento no WhatsApp
+- Destaque sobre permanência dos registros no Google Drive da família
+- Bloco principal informando acesso contínuo ao aplicativo em modo de consulta
 
 IMPORTANTE ANTES DA ABERTURA PÚBLICA
 1. Criar e inserir um endereço oficial de suporte nas páginas suporte.html, privacidade.html e termos.html.
 2. Solicitar revisão jurídica da Política de Privacidade e dos Termos de Uso.
 3. Confirmar que https://app.meudiariodeestudos.com.br está funcionando antes de divulgar o site.
+4. Instalar o GA4 antes da divulgação pública, após definir a conta de Analytics e revisar o consentimento aplicável.
 
 COMO PUBLICAR NO GITHUB PAGES
 1. Crie um repositório público separado, por exemplo: meu-diario-de-estudos-site.

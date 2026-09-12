@@ -77,6 +77,22 @@ h1 { margin: 0; max-width: 740px; font-size: clamp(2.45rem, 6vw, 4.6rem); line-h
 .mini span { color: var(--muted); font-size: .68rem; }
 
 section { padding: 86px 0; }
+.ownership { padding: 0; position: relative; z-index: 4; margin-top: -34px; }
+.ownership-card {
+  display: grid;
+  grid-template-columns: auto 1fr minmax(250px, .62fr);
+  gap: 22px;
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 27px 30px;
+  box-shadow: var(--shadow);
+}
+.ownership-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: var(--forest); color: #fff; font-size: 1.5rem; font-weight: 900; }
+.ownership-copy h2 { margin: 4px 0 7px; font-size: clamp(1.55rem, 3vw, 2.15rem); letter-spacing: -.025em; }
+.ownership-copy p { margin: 0; color: var(--muted); }
+.ownership-points { display: grid; gap: 8px; padding-left: 22px; border-left: 1px solid var(--line); color: var(--forest); font-weight: 800; font-size: .92rem; }
 .section-head { max-width: 720px; margin-bottom: 38px; }
 .section-kicker { color: var(--forest); font-weight: 800; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
 h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08; letter-spacing: -.035em; }
@@ -126,6 +142,8 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
 
 @media (max-width: 900px) {
   .hero-grid, .principles-grid { grid-template-columns: 1fr; }
+  .ownership-card { grid-template-columns: auto 1fr; }
+  .ownership-points { grid-column: 2; border-left: 0; padding-left: 0; }
   .hero-grid { gap: 46px; }
   .product-card { max-width: 620px; }
   .features { grid-template-columns: repeat(2, 1fr); }
@@ -137,6 +155,9 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
   .brand { font-size: 1rem; }
   .brand-mark { width: 31px; height: 31px; }
   .hero { padding: 58px 0 68px; }
+  .ownership { margin-top: -24px; }
+  .ownership-card { grid-template-columns: 1fr; padding: 23px; }
+  .ownership-points { grid-column: auto; border-top: 1px solid var(--line); padding-top: 17px; }
   .features, .steps { grid-template-columns: 1fr; }
   section { padding: 64px 0; }
   .cta-box, .footer-grid { flex-direction: column; align-items: flex-start; }
