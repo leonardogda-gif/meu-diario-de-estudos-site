@@ -171,6 +171,10 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
   .ownership-card { grid-template-columns: 1fr; padding: 23px; }
   .ownership-points { grid-column: auto; border-top: 1px solid var(--line); padding-top: 17px; }
   .features, .steps { grid-template-columns: 1fr; }
+  .feature { display: grid; grid-template-columns: 42px minmax(0, 1fr); column-gap: 14px; row-gap: 11px; align-items: center; padding: 24px; }
+  .feature-icon { grid-column: 1; grid-row: 1; }
+  .feature h3 { grid-column: 2; grid-row: 1; margin: 0; }
+  .feature p { grid-column: 1 / -1; grid-row: 2; margin: 0; }
   section { padding: 64px 0; }
   .cta-box, .footer-grid { flex-direction: column; align-items: flex-start; }
   .cta-box { padding: 28px; }
