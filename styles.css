@@ -107,7 +107,8 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
 .section-head p { margin: 0; color: var(--muted); font-size: 1.08rem; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .feature { background: var(--paper); border: 1px solid var(--line); border-radius: 15px; padding: 28px; box-shadow: 0 8px 24px rgba(23,51,42,.05); }
-.feature-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 11px; background: var(--cream); color: var(--forest); font-size: 1.25rem; }
+.feature-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 11px; background: var(--cream); color: var(--forest); }
+.feature-icon svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .feature h3 { margin: 17px 0 7px; font-size: 1.13rem; }
 .feature p { margin: 0; color: var(--muted); font-size: .96rem; }
 
@@ -176,8 +177,11 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
   .actions .button { width: 100%; }
 }
 @media (max-width: 420px) {
-  .nav-cta { padding: 9px 11px !important; font-size: .84rem !important; }
-  .brand span { max-width: 146px; white-space: normal; line-height: 1.05; }
+  .header-inner { gap: 8px; }
+  .site-header .brand { gap: 7px; font-size: .82rem; }
+  .site-header .brand-mark { width: 28px; height: 28px; }
+  .site-header .brand span { max-width: none; white-space: nowrap; line-height: 1; }
+  .nav-cta { padding: 8px 9px !important; font-size: .72rem !important; white-space: nowrap; }
   .product-card { padding: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button:hover { transform: none; } }
