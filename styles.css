@@ -69,6 +69,7 @@ h1 { margin: 0; max-width: 740px; font-size: clamp(2.45rem, 6vw, 4.6rem); line-h
 .button:focus-visible, .nav a:focus-visible, .footer-links a:focus-visible { outline: 3px solid #d5b36b; outline-offset: 3px; }
 
 .product-card { position: relative; background: var(--paper); color: var(--ink); border: 1px solid rgba(255,255,255,.4); border-radius: 20px; padding: 18px; box-shadow: 0 28px 65px rgba(4,19,14,.32); }
+.product-card-mobile { display: none; }
 .product-bar { background: var(--forest-2); color: #fff; border-radius: 12px 12px 5px 5px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; }
 .product-title { font-weight: 800; }
 .sync { font-size: .78rem; color: #d7e1dc; }
@@ -83,6 +84,25 @@ h1 { margin: 0; max-width: 740px; font-size: clamp(2.45rem, 6vw, 4.6rem); line-h
 .mini { background: var(--cream); border-radius: 9px; padding: 10px 7px; text-align: center; }
 .mini strong { display: block; color: var(--forest); font-size: 1.1rem; }
 .mini span { color: var(--muted); font-size: .68rem; }
+.mobile-product-head { background: var(--forest-2); color: #fff; border-radius: 14px 14px 6px 6px; padding: 14px; display: grid; justify-items: center; gap: 7px; }
+.mobile-product-brand { display: flex; align-items: center; gap: 8px; }
+.mobile-product-brand img { width: 29px; height: 29px; object-fit: contain; }
+.mobile-sync { font-size: .72rem; color: #d7e1dc; }
+.mobile-sync span { color: #91b983; }
+.mobile-today-card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+.mobile-today-card h3 { margin: 2px 0 0; font-family: "Fraunces", Georgia, serif; font-size: 1.45rem; }
+.mobile-date { color: var(--muted); font-size: .78rem; }
+.mobile-child { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; padding: 11px; }
+.mobile-child span { grid-column: 1 / -1; color: var(--muted); font-size: .7rem; }
+.mobile-child strong { font-size: .8rem; }
+.mobile-primary-action { margin-top: 10px; background: var(--green); color: #fff; border-radius: 10px; padding: 11px; text-align: center; font-weight: 800; font-size: .82rem; }
+.mobile-secondary-actions { display: grid; grid-template-columns: 1fr auto; gap: 7px; margin-top: 8px; }
+.mobile-secondary-actions span { border: 1px solid var(--line); border-radius: 9px; padding: 9px 7px; text-align: center; color: var(--forest); font-size: .7rem; font-weight: 800; }
+.mobile-tabbar { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0 -10px -10px; border-top: 1px solid var(--line); background: var(--paper); border-radius: 0 0 15px 15px; overflow: hidden; }
+.mobile-tabbar span { display: grid; justify-items: center; gap: 3px; padding: 9px 2px 8px; color: var(--muted); }
+.mobile-tabbar span.active { color: var(--forest); background: var(--cream); box-shadow: inset 0 3px 0 var(--forest); }
+.mobile-tabbar svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.mobile-tabbar b { font-size: .58rem; }
 
 section { padding: 86px 0; }
 .ownership { padding: 0; position: relative; z-index: 4; margin-top: -34px; }
@@ -175,6 +195,19 @@ h2 { margin: 7px 0 12px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.08
   .feature-icon { grid-column: 1; grid-row: 1; }
   .feature h3 { grid-column: 2; grid-row: 1; margin: 0; }
   .feature p { grid-column: 1 / -1; grid-row: 2; margin: 0; }
+  .product-card-desktop { display: none; }
+  .product-card-mobile { display: block; padding: 10px; }
+  .step { display: grid; grid-template-columns: 58px minmax(0, 1fr); column-gap: 15px; row-gap: 7px; align-items: start; padding-top: 0; }
+  .step::before { position: static; grid-column: 1; grid-row: 1 / span 2; justify-self: start; }
+  .step h3 { grid-column: 2; grid-row: 1; margin: 3px 0 0; }
+  .step p { grid-column: 2; grid-row: 2; }
+  .ownership-card { grid-template-columns: 54px minmax(0, 1fr); gap: 13px 15px; }
+  .ownership-icon { grid-column: 1; grid-row: 1 / span 2; align-self: start; }
+  .ownership-copy { display: contents; }
+  .ownership-copy .section-kicker { grid-column: 2; grid-row: 1; align-self: end; }
+  .ownership-copy h2 { grid-column: 2; grid-row: 2; margin: 0; }
+  .ownership-copy p { grid-column: 1 / -1; grid-row: 3; margin-top: 7px; }
+  .ownership-points { grid-column: 1 / -1; grid-row: 4; }
   section { padding: 64px 0; }
   .cta-box, .footer-grid { flex-direction: column; align-items: flex-start; }
   .cta-box { padding: 28px; }

@@ -1,4 +1,33 @@
-MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.4
+MEU DIÁRIO DE ESTUDOS — SITE INSTITUCIONAL v1.8
+
+AJUSTES DA v1.8
+- No celular, os números 01, 02 e 03 ficam ao lado dos títulos das etapas.
+- O símbolo de confirmação fica ao lado da chamada sobre preservação do histórico.
+- O site mostra um mockup próprio do aplicativo móvel em telas pequenas.
+- O mockup móvel reproduz cabeçalho, sincronização, tela Hoje e menu inferior.
+- Em telas maiores, o mockup anterior de computador permanece inalterado.
+
+CORREÇÃO DA v1.7
+- No celular, os ícones dos recursos ficam ao lado dos respectivos títulos.
+- A descrição ocupa a linha seguinte usando toda a largura do card.
+- O layout dos cards no computador permanece inalterado.
+
+CORREÇÕES DA v1.6
+- Substitui os símbolos geométricos dos recursos por ícones de contorno no
+  mesmo estilo visual do menu inferior do aplicativo.
+- Elimina caracteres que apareciam como quadrados quebrados em alguns celulares.
+- Mantém "Meu Diário de Estudos" em uma linha no cabeçalho móvel.
+- Redimensiona logo, texto e botão do cabeçalho para telas estreitas.
+- Atualiza o controle de cache dos arquivos visuais para v1.6.
+
+NOVIDADE DA v1.5
+- Botões alinhados ao sistema visual do aplicativo: primário verde, secundário
+  contornado e ações claras com menor peso.
+- Tipografia Nunito nos textos e Fraunces nos títulos, mantendo fallbacks locais.
+- Mais respiro interno nos cards de recursos.
+- Logo atual aplicado com renovação de cache no cabeçalho e no rodapé.
+- Rodapés de Suporte, Termos e Privacidade agora exibem a marca completa.
+- Texto principal de acesso padronizado como "Entrar no Diário".
 
 NOVIDADE DA v1.4
 - O caderno com broto do card passa a ser o logo oficial no cabeçalho, rodapé e favicon.
